@@ -108,7 +108,7 @@ export default function Home() {
       <section className="p-5 mt-12">
         <h2>ALUMNI STARTUP</h2>
         <h1 className="text-4xl mb-8 mt-8 max-w-[25ch]">
-          At MLV, your businesses solve real-world problems and make lasting
+          At Inner Circle, your businesses solve real-world problems and make lasting
           societal impact.
         </h1>
         {/* <div></div> */}
