@@ -5,7 +5,8 @@ import crown from "./crown.png";
 import globe from "./globe.png";
 import plane from "./plane.png";
 import rocket from "./rocket.png";
+import two_nerds from "./two-nerds-a-laptop.png";
 
-const ICONS = { arrow_right, arrow_skew, main_hero, crown, globe, plane, rocket }
+const ICONS = { arrow_right, arrow_skew, main_hero, crown, globe, plane, rocket, two_nerds }
 
 export default ICONS

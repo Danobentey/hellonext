@@ -2,6 +2,7 @@ import Button from "./components/Button";
 import Productcard from "./components/Productcard";
 import "./style.css";
 import ICONS from "./images/icons";
+import Partners from "./components/Partners"
 // import {} from "banner"
 
 export default function Home() {
@@ -69,8 +70,8 @@ export default function Home() {
         <h1 className="text-8xl">We help you start real companies.</h1>
         {/* <img src="" alt="" /> */}
 
-        <div className="flex gap-5 mt-[40px]">
-          <Button title="Secure your spo" />
+        <div className="flex gap-5 mt-[90px]">
+          <Button title="Secure your spot" />
 
           <h2 className="text-2xl ml-auto w-[50%]">
             Take your business to the next level, launch your startup, and
@@ -80,16 +81,18 @@ export default function Home() {
         </div>
       </header>
 
-    <section>
-      <div className="mt-[90px] mb-16 mx-auto w-[90%] h-[590px]">
-        <img src={ICONS.main_hero.src} alt="main" className="rounded-tl-[290px] rounded-bl-[50px] rounded-tr-[50px] rounded-br-[290px] mx-auto"  />
-      </div>
-    </section>
+      <section>
+        <div className="mt-[90px] mb-16 mx-auto w-[90%] h-[590px]">
+          <img
+            src={ICONS.main_hero.src}
+            alt="main"
+            className="rounded-tl-[290px] rounded-bl-[50px] rounded-tr-[50px] rounded-br-[290px] mx-auto"
+          />
+        </div>
+      </section>
 
       <section className="rounded-3xl flex-2 bg-gray-500 p-5">
-        <h2 className="mb-8">
-          OUR PROGRAM
-        </h2>
+        <h2 className="mb-8">OUR PROGRAM</h2>
         <h1 className="text-4xl mx-3 mb-8 max-w-[22ch]">
           Launch your business in our transformative entrepreneurship journey.
         </h1>
@@ -108,15 +111,16 @@ export default function Home() {
       <section className="p-5 mt-12">
         <h2>ALUMNI STARTUP</h2>
         <h1 className="text-4xl mb-8 mt-8 max-w-[25ch]">
-          At Inner Circle, your businesses solve real-world problems and make lasting
-          societal impact.
+          At Inner Circle, your businesses solve real-world problems and make
+          lasting societal impact.
         </h1>
         {/* <div></div> */}
-        <img src="" alt="" />
-        <div className="overflow-auto">
+        <img src={ICONS.two_nerds.src} alt="" className="ml-auto" />
+
+        <div className="mt-20 overflow-auto">
           <table className="table-fixed w-full text-left mt-6">
             <thead>
-              <tr className="p-7">
+              <tr className="h-12">
                 <th>Startup</th>
                 <th>Founder(s)</th>
                 <th>About</th>
@@ -124,8 +128,8 @@ export default function Home() {
             </thead>
             <tbody className="">
               {alumni.map((al, idx) => (
-                <tr key={idx} className="border-collapse border-t pt-4">
-                  <td>{al.startup}</td>
+                <tr key={idx} className="border-collapse border-t h-32">
+                  <td className="text-4xl">{al.startup}</td>
                   <td>
                     {al.founders.map((f, i) => (
                       <span key={i} className="inline-block mr-2">
@@ -146,13 +150,15 @@ export default function Home() {
         <h1 className="text-4xl mb-8 mt-8 max-w-[25ch]">
           Our Program is backed by the best.
         </h1>
-        <p className="text-xs mt-8">
+        <p className="text mt-8 mb-8">
           We have a dynamic network of companies and schools that support our
           mission.
         </p>
+
+        <Partners />
       </section>
 
-      <section className="w-full">
+      {/* <section className="w-full">
         <div className="container">
           <div className="first-slide w-full">
             <span>first - slide</span>
@@ -166,15 +172,22 @@ export default function Home() {
           </div>
           <div className="words words--second w-full">
             <span className="flex justify-between">
-              <i>third</i>
-              <i>third</i>
-              <i>third</i>
+              <b>second</b>
+              <b>second</b>
+              <b>second</b>
+            </span>
+          </div>
+          <div className="words words--second w-full">
+            <span className="flex justify-between">
+              <b>second</b>
+              <b>second</b>
+              <b>second</b>
             </span>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="p-5 mt-[140px]">
+      <section className="p-5 mt-24">
         <h2>CONTRIBUTORS AND SPEAKERS </h2>
         <aside>
           <h1 className="text-4xl mb-8 mt-8 max-w-[25ch]">
