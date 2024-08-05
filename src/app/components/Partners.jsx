@@ -4,7 +4,7 @@ import partner_logos from "../images/brands"
 
 const PartnerCard = ({logo}) => {
   return (
-    <div className="inline-block min-w-64 border">
+    <div className="inline-block min-w-64 border border-gray-800">
       <img src={logo.src} alt="logo" />
     </div>
   )
@@ -15,12 +15,12 @@ const Partners = () => {
   useEffect(() => {
     setTimeout(() => {
       if ( scrollOffset > -500 & scrollOffset <= 24) {
-        setScrollOffset(prev => prev - 0.2)
+        setScrollOffset(prev => prev - 0.4)
       } else if (scrollOffset <= -500) {
         setScrollOffset(1)
       }
       console.log(scrollOffset)
-    }, 100)
+    }, 25)
   })
 
   return (

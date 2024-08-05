@@ -2,7 +2,9 @@ import Button from "./components/Button";
 import Productcard from "./components/Productcard";
 import "./style.css";
 import ICONS from "./images/icons";
-import Partners from "./components/Partners"
+import Partners from "./components/Partners";
+import ProfileCard from "./components/ProfileCard";
+import PROFILES from "./images/profiles";
 // import {} from "banner"
 
 export default function Home() {
@@ -63,6 +65,37 @@ export default function Home() {
         "PStuNotes is a startup aimed to make IB/AP students' lives easier by generating their learning materials into practical exam questions.",
     },
   ];
+
+  const experts = [
+    {
+      img: PROFILES.yen.src,
+      name: "Thu Yen nguyen",
+      company: "Bank of America",
+      role: "Business Analyst",
+      statement: "Thu-Yen Nguyen is a business analyst at Bank of America, a leading investment bank with more than a trillion dollars AUM. Prior to joining BofA, she worked at VinFast working in their product management arm.",
+    },
+    {
+      img: PROFILES.may.src,
+      name: "Co May Nguyen",
+      company: "Stucolab",
+      role: "CEO",
+      statement: "Co May is a founder and CEO of Stucolab space – a collaborative study environment that aims to cultivate a community of students who can thrive collectively. In the past program, she shared her wealth of expertise in marketing and branding.",
+    },
+    {
+      img: PROFILES.cuong.src,
+      name: "Viet Cuong Nguyen",
+      company: "VietcomBank",
+      role: "Deputy CEO",
+      statement: "Nguyễn Việt Cường is the Deputy CEO of VietcomBank, a leading commercial bank with $62 billion in assets. He holds decades of experience in the financial services industry and has worked with renowned companies in the past",
+    },
+    {
+      img: PROFILES.mads.src,
+      name: "Mads Warner",
+      company: "Ecotek",
+      role: "CEO",
+      statement: "Mads Werner is a 3x Founder and serial entrepreneur. Currently, he is the CEO of EcoTek, a leading technology consultancy company as an extension of EcoPark Group. Previously, he was a venture capitalist at Golden Gate Ventures.",
+    },
+  ]
 
   return (
     <>
@@ -194,6 +227,12 @@ export default function Home() {
             Gain valuable insights and real-world experience from industry
             leaders and entrepreneurs.
           </h1>
+          {/* class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:gap-12" */}
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 xl:gap-12">
+            {experts.map((i, idx) => (
+              <ProfileCard key={idx} name={i.name} company={i.company} role={i.role} statement={i.statement} img={i.img} />
+            ))}
+          </div>
         </aside>
       </section>
     </>
