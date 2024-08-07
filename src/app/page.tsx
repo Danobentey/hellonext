@@ -5,6 +5,7 @@ import ICONS from "./images/icons";
 import Partners from "./components/Partners";
 import ProfileCard from "./components/ProfileCard";
 import PROFILES from "./images/profiles";
+import Faq from "./components/Faq"
 // import {} from "banner"
 
 export default function Home() {
@@ -75,6 +76,13 @@ export default function Home() {
       statement: "Thu-Yen Nguyen is a business analyst at Bank of America, a leading investment bank with more than a trillion dollars AUM. Prior to joining BofA, she worked at VinFast working in their product management arm.",
     },
     {
+      img: PROFILES.eric.src,
+      name: "Eric Lam",
+      company: "Recast Ventures",
+      role: "Venture Innovator",
+      statement: "Eric Lam is a Business Leaders and Founders who provides new revenue streams required to scale businesses for a successful exit. With over 2 decades of entrepreneurial prowess in business innovation, He is also an author of 'The Fast Founder: from Startup to Exit in 36 Months'.",
+    },
+    {
       img: PROFILES.may.src,
       name: "Co May Nguyen",
       company: "Stucolab",
@@ -95,12 +103,15 @@ export default function Home() {
       role: "CEO",
       statement: "Mads Werner is a 3x Founder and serial entrepreneur. Currently, he is the CEO of EcoTek, a leading technology consultancy company as an extension of EcoPark Group. Previously, he was a venture capitalist at Golden Gate Ventures.",
     },
+    {
+      more: true
+    }
   ]
 
   return (
     <>
-      <header className="mt-[60px]">
-        <h1 className="text-8xl">We help you start real companies.</h1>
+      <header className="mt-[60px] px-26">
+        <h1 className="text-5xl font-semibold lg:text-7xl w-[15ch]">We help you start real companies.</h1>
         {/* <img src="" alt="" /> */}
 
         <div className="flex gap-5 mt-[90px]">
@@ -115,7 +126,7 @@ export default function Home() {
       </header>
 
       <section>
-        <div className="mt-[90px] mb-16 mx-auto w-[90%] h-[590px]">
+        <div className="mt-[90px] mb-9 mx-auto w-[90%] h-[590px] border border-gray-700 rounded-tl-[290px] rounded-bl-[50px] rounded-tr-[50px] rounded-br-[290px]">
           <img
             src={ICONS.main_hero.src}
             alt="main"
@@ -124,7 +135,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="rounded-3xl flex-2 bg-gray-500 p-5">
+      <section className="mt-32 rounded-3xl flex-2 bg-gray-500 p-5">
         <h2 className="mb-8">OUR PROGRAM</h2>
         <h1 className="text-4xl mx-3 mb-8 max-w-[22ch]">
           Launch your business in our transformative entrepreneurship journey.
@@ -154,15 +165,15 @@ export default function Home() {
           <table className="table-fixed w-full text-left mt-6">
             <thead>
               <tr className="h-12">
-                <th>Startup</th>
+                <th className="pl-2">Startup</th>
                 <th>Founder(s)</th>
                 <th>About</th>
               </tr>
             </thead>
             <tbody className="">
               {alumni.map((al, idx) => (
-                <tr key={idx} className="border-collapse border-t h-32">
-                  <td className="text-4xl">{al.startup}</td>
+                <tr key={idx} className="border-collapse border-t border-gray-600 h-32">
+                  <td className="text-3xl pl-2">{al.startup}</td>
                   <td>
                     {al.founders.map((f, i) => (
                       <span key={i} className="inline-block mr-2">
@@ -191,35 +202,6 @@ export default function Home() {
         <Partners />
       </section>
 
-      {/* <section className="w-full">
-        <div className="container">
-          <div className="first-slide w-full">
-            <span>first - slide</span>
-          </div>
-          <div className="words words--first w-full flex">
-            <span className="flex justify-between gap-14">
-              <b>second</b>
-              <b>second</b>
-              <b>second</b>
-            </span>
-          </div>
-          <div className="words words--second w-full">
-            <span className="flex justify-between">
-              <b>second</b>
-              <b>second</b>
-              <b>second</b>
-            </span>
-          </div>
-          <div className="words words--second w-full">
-            <span className="flex justify-between">
-              <b>second</b>
-              <b>second</b>
-              <b>second</b>
-            </span>
-          </div>
-        </div>
-      </section> */}
-
       <section className="p-5 mt-24">
         <h2>CONTRIBUTORS AND SPEAKERS </h2>
         <aside>
@@ -230,11 +212,30 @@ export default function Home() {
           {/* class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:gap-12" */}
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 xl:gap-12">
             {experts.map((i, idx) => (
-              <ProfileCard key={idx} name={i.name} company={i.company} role={i.role} statement={i.statement} img={i.img} />
+              <ProfileCard key={idx} name={i.name} company={i.company} role={i.role} statement={i.statement} img={i.img} more={i.more} />
             ))}
           </div>
         </aside>
       </section>
+
+      <section className="mt-24 py-32 px-8 border border-gray-700 rounded-3xl">
+        <div className="w-full">
+          <h1 className="text-5xl">Ready to Begin Your Entreprenuership Journey</h1>
+          <div className="flex gap-5 mt-9">
+            <span className="bg-gray-800 rounded-lg font-bold px-2 py-1 lg:px-4 lg:py-2">👯 Make new friends</span>
+            <span className="bg-gray-800 rounded-lg font-bold px-2 py-1 lg:px-4 lg:py-2">🚀 Launch a business</span>
+            <span className="bg-gray-800 rounded-lg font-bold px-2 py-1 lg:px-4 lg:py-2">🔆 Become an entrepreneur</span>
+          </div>
+
+          <div className="mt-36">
+            <Button title={"Join The Waiting List"}/>
+          </div>
+        </div>
+      </section>
+
+      <div className="mt-2">
+        <Faq />
+      </div>
     </>
   );
 }

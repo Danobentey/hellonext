@@ -8,4 +8,4 @@ import bank_of_america from "./bank-of-america.png";
 
 const partner_logos = [microsoft, nexttech, pw, summit, unis, vietcomBank, bank_of_america];
 
-export default partner_logos
+export default partner_logos;
