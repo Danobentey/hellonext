@@ -111,13 +111,13 @@ export default function Home() {
   return (
     <>
       <header className="mt-[60px] px-26">
-        <h1 className="text-5xl font-semibold lg:text-7xl w-[15ch]">We help you start real companies.</h1>
+        <h1 className="text-2xl sm:text-5xl w-full text-center sm:text-left font-semibold lg:text-7xl max-w-full">We help you start real companies.</h1>
         {/* <img src="" alt="" /> */}
 
-        <div className="flex gap-5 mt-[90px]">
+        <div className="flex-col-reverse sm:flex-row flex gap-5 mt-[90px]">
           <Button title="Secure your spot" />
 
-          <h2 className="text-2xl ml-auto w-[50%]">
+          <h2 className="text-2xl ml-auto sm:w-[50%]">
             Take your business to the next level, launch your startup, and
             upskill yourself as an entrepreneur. Sign ups for 2024 Summer
             Program is now open!
@@ -135,9 +135,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-32 rounded-3xl flex-2 bg-gray-500 p-5">
+      <section className="mt-32 rounded-3xl flex-2 sm:bg-gray-500 p-5">
         <h2 className="mb-8">OUR PROGRAM</h2>
-        <h1 className="text-4xl mx-3 mb-8 max-w-[22ch]">
+        <h1 className="text-xs xs:text-2xl md:text-4xl mx-3 mb-8 max-w-[22ch]">
           Launch your business in our transformative entrepreneurship journey.
         </h1>
         <div className="grid grid-rows-4 sm:grid-rows-2 lg:grid-rows-1 gap-8 grid-flow-col">
@@ -161,8 +161,8 @@ export default function Home() {
         {/* <div></div> */}
         <img src={ICONS.two_nerds.src} alt="" className="ml-auto" />
 
-        <div className="mt-20 overflow-auto">
-          <table className="table-fixed w-full text-left mt-6">
+        <div className="mt-20 w-full overflow-x-auto">
+          <table className=" w-[98%] md:w-full text-left mt-6">
             <thead>
               <tr className="h-12">
                 <th className="pl-2">Startup</th>
@@ -189,7 +189,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="p-5 mt-12">
+      <section className="mt-12 w-full overflow-clip">
         <h2>PARTNERS & SPONSORS</h2>
         <h1 className="text-4xl mb-8 mt-8 max-w-[25ch]">
           Our Program is backed by the best.
@@ -218,10 +218,10 @@ export default function Home() {
         </aside>
       </section>
 
-      <section className="mt-24 py-32 px-8 border border-gray-700 rounded-3xl">
+      <section className="mt-24 py-32 p-6 lg:px-8 border border-gray-700 rounded-3xl">
         <div className="w-full">
-          <h1 className="text-5xl">Ready to Begin Your Entreprenuership Journey</h1>
-          <div className="flex gap-5 mt-9">
+          <h1 className="text-2xl font-bold md:text-5xl text-wrap">Ready to Begin Your Entreprenuership Journey</h1>
+          <div className="flex gap-5 mt-9 flex-wrap">
             <span className="bg-gray-800 rounded-lg font-bold px-2 py-1 lg:px-4 lg:py-2">👯 Make new friends</span>
             <span className="bg-gray-800 rounded-lg font-bold px-2 py-1 lg:px-4 lg:py-2">🚀 Launch a business</span>
             <span className="bg-gray-800 rounded-lg font-bold px-2 py-1 lg:px-4 lg:py-2">🔆 Become an entrepreneur</span>

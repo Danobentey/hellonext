@@ -13,7 +13,7 @@ export default function Button({ title, ...props }) {
         className="w-[fit-content] flex items-center gap-4 rounded-full cursor-pointer"
         {...props}
       >
-        <span className="text-xl bg-gray-800 hover:bg-gray-900 transition-all delay-100 p-5 inline-block rounded-full">
+        <span className="text-xl text-center bg-gray-800 hover:bg-gray-900 transition-all delay-100 p-5 inline-block rounded-full">
           {title || "Secure your spot"}
         </span>
         {isHovered ? (
