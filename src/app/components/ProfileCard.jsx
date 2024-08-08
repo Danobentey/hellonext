@@ -2,8 +2,8 @@ import React from "react";
 
 const ProfileCard = ({ img, name, role, company, statement, more }) => {
   if (more) return (
-    <div className="relative border border-gray-700 rounded-3xl p-8">
-      <h2 className="text-3xl text-center absolute top-[45%] cursor-pointer">and many more... 💫</h2>
+    <div className="relative border border-gray-700 rounded-3xl min-h-40 p-8">
+      <h2 className="text-3xl  text-center absolute top-[45%] cursor-pointer">and many more... 💫</h2>
     </div>
   )
   return (

@@ -126,7 +126,7 @@ export default function Home() {
       </header>
 
       <section>
-        <div className="mt-[90px] mb-9 mx-auto w-[90%] h-[590px] border border-gray-700 rounded-tl-[290px] rounded-bl-[50px] rounded-tr-[50px] rounded-br-[290px]">
+        <div className="mt-[90px] mb-9 mx-auto w-[90%] h-auto sm:h-[590px] border border-gray-700 rounded-tl-[290px] rounded-bl-[50px] rounded-tr-[50px] rounded-br-[290px]">
           <img
             src={ICONS.main_hero.src}
             alt="main"
