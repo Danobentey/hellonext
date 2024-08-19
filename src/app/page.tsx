@@ -6,6 +6,7 @@ import Partners from "./components/Partners";
 import ProfileCard from "./components/ProfileCard";
 import PROFILES from "./images/profiles";
 import Faq from "./components/Faq"
+import Footer from "./components/Footer";
 // import {} from "banner"
 
 export default function Home() {
@@ -137,7 +138,7 @@ export default function Home() {
 
       <section className="mt-32 rounded-3xl flex-2 sm:bg-gray-500 p-5">
         <h2 className="mb-8">OUR PROGRAM</h2>
-        <h1 className="text-xs xs:text-2xl md:text-4xl mx-3 mb-8 max-w-[22ch]">
+        <h1 className="text-2xl md:text-4xl mx-3 mb-8 max-w-[22ch]">
           Launch your business in our transformative entrepreneurship journey.
         </h1>
         <div className="grid grid-rows-4 sm:grid-rows-2 lg:grid-rows-1 gap-8 grid-flow-col">
@@ -205,7 +206,7 @@ export default function Home() {
       <section className="p-5 mt-24">
         <h2>CONTRIBUTORS AND SPEAKERS </h2>
         <aside>
-          <h1 className="text-4xl mb-8 mt-8 max-w-[25ch]">
+          <h1 className="text-4xl my-8 max-w-[25ch]">
             Gain valuable insights and real-world experience from industry
             leaders and entrepreneurs.
           </h1>
@@ -233,9 +234,20 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="mt-2">
+      <section className="mt-24 px-2">
+        <h2>FAQS</h2>
+        <h3 className="text-4xl my-8 max-w-[25ch]">Frequently Asked Questions</h3>
         <Faq />
-      </div>
+
+        <div className="">
+          <p className="ml-2 mt-12 mb-3">Still have more questions?</p>
+          <Button title="Reach out to us" />
+        </div>
+      </section>
+      
+      <footer className="mt-24">
+        <Footer />
+      </footer>
     </>
   );
 }

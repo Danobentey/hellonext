@@ -46,7 +46,7 @@ const NavItems = () => {
           <a
             key={item.name}
             href={item.href}
-            aria-current={item.current ? "page" : undefined}
+            aria-current={item.current() ? "page" : undefined}
             className={classNames(
               item.current()
                 ? "underline p-50 text-white"
