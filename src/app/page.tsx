@@ -245,9 +245,6 @@ export default function Home() {
         </div>
       </section>
       
-      <footer className="mt-24">
-        <Footer />
-      </footer>
     </>
   );
 }

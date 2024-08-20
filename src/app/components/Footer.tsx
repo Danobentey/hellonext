@@ -42,7 +42,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-4 sm:flex-row sm:justify-between">
+    <div className="mt-96 flex flex-col gap-4 sm:flex-row sm:justify-between">
       <div className="">
         <img src="" alt="" />
         <Button title="Join the Waiting List" />
