@@ -14,10 +14,10 @@ import { useState } from "react";
 import NavItems from "./NavItems";
 
 const navigation = [
-  { name: "Program", href: "#", current: true },
+  { name: "Courses", href: "#", current: true },
   { name: "About", href: "#", current: false },
-  { name: "Contact", href: "#", current: false },
-  { name: "Calendar", href: "#", current: false },
+  { name: "Courses", href: "/products", current: false },
+  // { name: "Calendar", href: "#", current: false },
 ];
 
 function classNames(...classes) {
