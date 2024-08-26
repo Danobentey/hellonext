@@ -116,8 +116,7 @@ export default function Home() {
         {/* <img src="" alt="" /> */}
 
         <div className="flex-col-reverse sm:flex-row flex gap-5 mt-[90px]">
-          <Button title="Secure your spot" />
-
+          <Button title="Secure your spot"/>
           <h2 className="text-2xl ml-auto sm:w-[50%]">
             Take your business to the next level, launch your startup, and
             upskill yourself as an entrepreneur. Sign ups for 2024 Summer
@@ -127,16 +126,16 @@ export default function Home() {
       </header>
 
       <section>
-        <div className="mt-[90px] mb-9 mx-auto w-[90%] h-auto sm:h-[590px] border border-gray-700 rounded-tl-[290px] rounded-bl-[50px] rounded-tr-[50px] rounded-br-[290px]">
+        <div className="mt-[90px] mb-9 mx-auto w-[95%] h-auto sm:h-[500px] lg:h-[550px] border border-gray-700 rounded-tl-[290px] rounded-bl-[50px] rounded-tr-[50px] rounded-br-[290px]">
           <img
             src={ICONS.main_hero.src}
             alt="main"
-            className="rounded-tl-[290px] rounded-bl-[50px] rounded-tr-[50px] rounded-br-[290px] mx-auto"
+            className="h-full w-full rounded-tl-[290px] rounded-bl-[50px] rounded-tr-[50px] rounded-br-[290px] mx-auto"
           />
         </div>
       </section>
 
-      <section className="mt-32 rounded-3xl flex-2 sm:bg-gray-500 p-5">
+      <section className="mt-32 rounded-3xl flex-2 sm:bg-gray-500 p-5 w-[99%]">
         <h2 className="mb-8">OUR PROGRAM</h2>
         <h1 className="text-2xl md:text-4xl mx-3 mb-8 max-w-[22ch]">
           Launch your business in our transformative entrepreneurship journey.
@@ -190,7 +189,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-12 w-full overflow-clip">
+      <section  className=" bg-[#19200e] p-[20px] text-white mt-12 w-full overflow-clip">
         <h2>PARTNERS & SPONSORS</h2>
         <h1 className="text-4xl mb-8 mt-8 max-w-[25ch]">
           Our Program is backed by the best.

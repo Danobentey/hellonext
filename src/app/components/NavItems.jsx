@@ -40,14 +40,14 @@ const NavItems = () => {
   ];
 
   return (
-    <div className="hidden sm:ml-6 sm:block">
-      <div className="flex space-x-4">
+    <div className="sm:ml-6 sm:block">
+      <div className=" flex space-x-4">
         {navigation.map((item) => (
           <a
             key={item.name}
             href={item.href}
             aria-current={item.current() ? "page" : undefined}
-            className={classNames(
+            className={classNames( 
               item.current()
                 ? "underline p-50 text-white"
                 : "text-gray-300 hover:bg-gray-700 hover:text-white",
