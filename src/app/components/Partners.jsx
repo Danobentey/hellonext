@@ -4,8 +4,8 @@ import partner_logos from "../images/brands"
 
 const PartnerCard = ({logo}) => {
   return (
-    <div className="inline-block min-w-64 border border-gray-800">
-      <img src={logo.src} alt="logo" />
+    <div className=" rounded-lg inline-block min-w-64 border border-gray-800">
+      <img style={{backgroundColor: '#161c12',borderRadius : '10px',width:'100%'}} src={logo.src} alt="logo" />
     </div>
   )
 }

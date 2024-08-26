@@ -20,7 +20,7 @@ section > h2 {
 }
 .container {
   width: 100%;
-  background: #111;
+  background: white;
 }
 
 .first-slide {
@@ -40,7 +40,9 @@ section > h2 {
   animation-fill-mode: forwards;
   border: 3px solid green;
 }
-
+.secure-button{
+  color: white
+}
 .words {
   font-size: 100px;
   margin: 0 auto;
@@ -95,4 +97,7 @@ span i {
   100% {
     transform: translate(0, 0);
   }
+}
+footer{
+  background:linear-gradient(to bottom right, #cece25,black 85%);
 }
