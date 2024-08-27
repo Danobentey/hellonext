@@ -115,7 +115,7 @@ export default function Home() {
         <h1 className="text-2xl sm:text-5xl w-[50%] text-center sm:text-left font-semibold lg:text-7xl  text-white mix-blend-difference m max-w-50% border-8">We help you start real companies.</h1>
         {/* <img src="" alt="" /> */}
 
-        <div className="flex-col-reverse relative sm:flex-row flex gap-5 mt-8 sm:h-400px  lg:h-[550px]">
+        <div className="flex-col-reverse relative sm:flex-row flex gap-5 mt-8 sm:h-400px  lg:h-[350px]">
           <Button title="Secure your spot"/>
           <h2 className="text-2xl ml-auto sm:w-[50%] text-white mix-blend-difference">
             Take your business to the next level, launch your startup, and
@@ -127,15 +127,15 @@ export default function Home() {
         <img
             src={ICONS.main_hero.src}
             alt="main"
-            className="absolute -z-50 top-[60px] w-full first-letter:w-full rounded-tl-[200px] rounded-bl-[50px] rounded-tr-[50px] rounded-br-[290px] mx-auto"
+            className="absolute -z-50 top-[60px] first-letter:w-full rounded-tl-[200px] rounded-bl-[50px] rounded-tr-[50px] rounded-br-[200px] mx-auto"
           />
       </header>
 
 
 
-      <section className="mt-32 rounded-3xl flex-2 sm:bg-gray-500 p-5 w-[99%]">
-        <h2 className="mb-8">OUR PROGRAM</h2>
-        <h1 className="text-2xl md:text-4xl mx-3 mb-8 max-w-[22ch]">
+      <section className="mt-32 rounded-3xl flex-2 bg-[#19200e] p-5 w-[99%]">
+        <h2 className="mb-8 text-white">OUR PROGRAM</h2>
+        <h1 className="text-2xl text-white md:text-4xl mx-3 mb-8 max-w-[22ch]">
           Launch your business in our transformative entrepreneurship journey.
         </h1>
         <div className="grid grid-rows-4 sm:grid-rows-2 lg:grid-rows-1 gap-8 grid-flow-col">
@@ -216,9 +216,9 @@ export default function Home() {
         </aside>
       </section>
 
-      <section className="mt-24 py-32 p-6 lg:px-8 border border-gray-700 rounded-3xl">
+      <section className="mt-24 py-32 p-6 lg:px-8 border bg-[#19200e] text-white rounded-3xl">
         <div className="w-full">
-          <h1 className="text-2xl  font-bold md:text-5xl text-wrap">Ready to Begin Your Entreprenuership Journey</h1>
+          <h1 className="text-2xl  font-bold md:text-5xl text-wrap">Ready to Begin Your Entreprenuership Journey?</h1>
           <div className="flex gap-5 mt-9 flex-wrap">
             <span className="bg-gray-800 text-white rounded-lg font-bold px-2 py-1 lg:px-4 lg:py-2">👯 Make new friends</span>
             <span className="bg-gray-800 text-white rounded-lg font-bold px-2 py-1 lg:px-4 lg:py-2">🚀 Launch a business</span>
