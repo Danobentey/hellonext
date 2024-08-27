@@ -42,14 +42,14 @@ const Footer = () => {
   ];
 
   return (
-    <div className="mt-[-59px] w-[101%] ml-[-10px] p-[20px] rounded-tr-[15px] rounded-tl-[15px] h-[300px]flex flex-col gap-4 sm:flex-row sm:justify-between">
+    <div className="mt-[-59px] w-[101%] ml-[-10px] p-[20px] rounded-tr-[15px] rounded-tl-[15px] h-[300px]flex flex-col gap-4 sm:flex-row sm:justify-between bg-[radial-gradient(circle_at_bottom,_var(--tw-gradient-stops))] from-[#d5cd1e] from-5% to-black to-90%">
       <div className="ml-12 mt-12">
         <img src="" alt="" />
         <Button  title="Join the Waiting List" />
       </div>
 
-      <div className="flex gap-4 justify-between sm:justify-normal mt-[-70px] ml-[50%] pr-12 pt-6 pb-12">
-        <nav className="ml-[6%] flex flex-col">
+      <div className="flex gap-4  justify-between sm:justify-around mt-[-70px] ml-[40%] pr-12 pt-6 pb-12">
+        <nav className="ml-[6%] flex  h-full flex-col">
           {navigation.map((item) => (
             <a
               key={item.name}
@@ -57,8 +57,8 @@ const Footer = () => {
               aria-current={item.current() ? "page" : undefined}
               className={classNames(
                 item.current()
-                  ? " underline p-50 text-white"
-                  : "text-[40px] p-[20px] text-gray-300 hover:bg-gray-700 hover:text-white",
+                  ? " underline text-[30px] m-[20px] text-white"
+                  : "text-[43px] p-[20px] text-gray-300 hover:bg-gray-700 hover:text-white",
                 "rounded-md text-sm font-medium"
               )}
               onClick={() => setActive(item.name)}

@@ -220,11 +220,11 @@ export default function Home() {
 
       <section className="mt-24 py-32 p-6 lg:px-8 border border-gray-700 rounded-3xl">
         <div className="w-full">
-          <h1 className="text-2xl font-bold md:text-5xl text-wrap">Ready to Begin Your Entreprenuership Journey</h1>
+          <h1 className="text-2xl  font-bold md:text-5xl text-wrap">Ready to Begin Your Entreprenuership Journey</h1>
           <div className="flex gap-5 mt-9 flex-wrap">
-            <span className="bg-gray-800 rounded-lg font-bold px-2 py-1 lg:px-4 lg:py-2">👯 Make new friends</span>
-            <span className="bg-gray-800 rounded-lg font-bold px-2 py-1 lg:px-4 lg:py-2">🚀 Launch a business</span>
-            <span className="bg-gray-800 rounded-lg font-bold px-2 py-1 lg:px-4 lg:py-2">🔆 Become an entrepreneur</span>
+            <span className="bg-gray-800 text-white rounded-lg font-bold px-2 py-1 lg:px-4 lg:py-2">👯 Make new friends</span>
+            <span className="bg-gray-800 text-white rounded-lg font-bold px-2 py-1 lg:px-4 lg:py-2">🚀 Launch a business</span>
+            <span className="bg-gray-800 text-white rounded-lg font-bold px-2 py-1 lg:px-4 lg:py-2">🔆 Become an entrepreneur</span>
           </div>
 
           <div className="mt-36">
