@@ -111,29 +111,27 @@ export default function Home() {
 
   return (
     <>
-      <header className="mt-[60px] px-26">
-        <h1 className="text-2xl sm:text-5xl w-full text-center sm:text-left font-semibold lg:text-7xl max-w-full">We help you start real companies.</h1>
+      <header className="mt-[60px] px-26 relative">
+        <h1 className="text-2xl sm:text-5xl w-[50%] text-center sm:text-left font-semibold lg:text-7xl  text-white mix-blend-difference m max-w-50% border-8">We help you start real companies.</h1>
         {/* <img src="" alt="" /> */}
 
-        <div className="flex-col-reverse sm:flex-row flex gap-5 mt-[90px]">
+        <div className="flex-col-reverse relative sm:flex-row flex gap-5 mt-8 sm:h-400px  lg:h-[550px]">
           <Button title="Secure your spot"/>
-          <h2 className="text-2xl ml-auto sm:w-[50%]">
+          <h2 className="text-2xl ml-auto sm:w-[50%] text-white mix-blend-difference">
             Take your business to the next level, launch your startup, and
             upskill yourself as an entrepreneur. Sign ups for 2024 Summer
             Program is now open!
           </h2>
-        </div>
-      </header>
 
-      <section>
-        <div className="mt-[90px] mb-9 mx-auto w-[95%] h-auto sm:h-[500px] lg:h-[550px] border border-gray-700 rounded-tl-[290px] rounded-bl-[50px] rounded-tr-[50px] rounded-br-[290px]">
-          <img
+        </div>
+        <img
             src={ICONS.main_hero.src}
             alt="main"
-            className="h-full w-full rounded-tl-[290px] rounded-bl-[50px] rounded-tr-[50px] rounded-br-[290px] mx-auto"
+            className="absolute -z-50 top-[60px] w-full first-letter:w-full rounded-tl-[200px] rounded-bl-[50px] rounded-tr-[50px] rounded-br-[290px] mx-auto"
           />
-        </div>
-      </section>
+      </header>
+
+
 
       <section className="mt-32 rounded-3xl flex-2 sm:bg-gray-500 p-5 w-[99%]">
         <h2 className="mb-8">OUR PROGRAM</h2>

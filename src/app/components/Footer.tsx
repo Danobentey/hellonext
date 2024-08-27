@@ -57,8 +57,8 @@ const Footer = () => {
               aria-current={item.current() ? "page" : undefined}
               className={classNames(
                 item.current()
-                  ? " underline text-[30px] m-[20px] text-white"
-                  : "text-[43px] p-[20px] text-gray-300 hover:bg-gray-700 hover:text-white",
+                  ? " underline text-[50px] m-[20px] text-white"
+                  : "text-[50px] p-[20px] text-gray-300 hover:text-[60px]",
                 "rounded-md text-sm font-medium"
               )}
               onClick={() => setActive(item.name)}
@@ -70,15 +70,15 @@ const Footer = () => {
 
         <div className="flex flex-col gap-4 mt-[20px]">
           <p className="text-white text-[18px]">Contact us </p>
-          <p className="flex text-[15px] text-white place-items-center gap-1">
+          <p className="flex text-[15px] text-white place-items-center gap-1 hover:bg-gray-700 hover:text-white">
             <img src={ICONS.linkedin.src} alt="linkedin" className="h-[20px]" />
             LinkedIn
           </p>
-          <p className="flex text-[15px] text-white place-items-center gap-1">
+          <p className="flex text-[15px] text-white place-items-center gap-1 hover:bg-gray-700 hover:text-white">
             <img src={ICONS.fb.src} alt="fb" className="h-[20px]" />
             Facebook
           </p>
-          <p className="flex text-[15px] text-white place-items-center gap-1">
+          <p className="flex text-[15px] text-white place-items-center gap-1 hover:bg-gray-700 hover:text-white">
             <img src={ICONS.insta.src} alt="insta" className="h-[30px]" />
             Instagram
           </p>
