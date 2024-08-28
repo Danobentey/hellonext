@@ -5,9 +5,7 @@ import ICONS from "./images/icons";
 import Partners from "./components/Partners";
 import ProfileCard from "./components/ProfileCard";
 import PROFILES from "./images/profiles";
-import Faq from "./components/Faq"
-import Footer from "./components/Footer";
-// import {} from "banner"
+import Faq from "./components/Faq";
 
 export default function Home() {
   const services = [
@@ -74,68 +72,76 @@ export default function Home() {
       name: "Thu Yen nguyen",
       company: "Bank of America",
       role: "Business Analyst",
-      statement: "Thu-Yen Nguyen is a business analyst at Bank of America, a leading investment bank with more than a trillion dollars AUM. Prior to joining BofA, she worked at VinFast working in their product management arm.",
+      statement:
+        "Thu-Yen Nguyen is a business analyst at Bank of America, a leading investment bank with more than a trillion dollars AUM. Prior to joining BofA, she worked at VinFast working in their product management arm.",
     },
     {
       img: PROFILES.eric.src,
       name: "Eric Lam",
       company: "Recast Ventures",
       role: "Venture Innovator",
-      statement: "Eric Lam is a Business Leaders and Founders who provides new revenue streams required to scale businesses for a successful exit. With over 2 decades of entrepreneurial prowess in business innovation, He is also an author of 'The Fast Founder: from Startup to Exit in 36 Months'.",
+      statement:
+        "Eric Lam is a Business Leaders and Founders who provides new revenue streams required to scale businesses for a successful exit. With over 2 decades of entrepreneurial prowess in business innovation, He is also an author of 'The Fast Founder: from Startup to Exit in 36 Months'.",
     },
     {
       img: PROFILES.may.src,
       name: "Co May Nguyen",
       company: "Stucolab",
       role: "CEO",
-      statement: "Co May is a founder and CEO of Stucolab space – a collaborative study environment that aims to cultivate a community of students who can thrive collectively. In the past program, she shared her wealth of expertise in marketing and branding.",
+      statement:
+        "Co May is a founder and CEO of Stucolab space – a collaborative study environment that aims to cultivate a community of students who can thrive collectively. In the past program, she shared her wealth of expertise in marketing and branding.",
     },
     {
       img: PROFILES.cuong.src,
       name: "Viet Cuong Nguyen",
       company: "VietcomBank",
       role: "Deputy CEO",
-      statement: "Nguyễn Việt Cường is the Deputy CEO of VietcomBank, a leading commercial bank with $62 billion in assets. He holds decades of experience in the financial services industry and has worked with renowned companies in the past",
+      statement:
+        "Nguyễn Việt Cường is the Deputy CEO of VietcomBank, a leading commercial bank with $62 billion in assets. He holds decades of experience in the financial services industry and has worked with renowned companies in the past",
     },
     {
       img: PROFILES.mads.src,
       name: "Mads Warner",
       company: "Ecotek",
       role: "CEO",
-      statement: "Mads Werner is a 3x Founder and serial entrepreneur. Currently, he is the CEO of EcoTek, a leading technology consultancy company as an extension of EcoPark Group. Previously, he was a venture capitalist at Golden Gate Ventures.",
+      statement:
+        "Mads Werner is a 3x Founder and serial entrepreneur. Currently, he is the CEO of EcoTek, a leading technology consultancy company as an extension of EcoPark Group. Previously, he was a venture capitalist at Golden Gate Ventures.",
     },
     {
-      more: true
-    }
-  ]
+      more: true,
+    },
+  ];
 
   return (
     <>
-      <header className="mt-[60px] px-26 relative">
-        <h1 className="text-2xl sm:text-5xl w-[50%] text-center sm:text-left font-semibold lg:text-7xl  text-white mix-blend-difference m max-w-50% border-8">We help you start real companies.</h1>
+      <header className="mt-[60px] px-[20px]">
+        <h1 className="text-2xl sm:text-5xl w-full text-center sm:text-left font-semibold lg:text-7xl max-w-full">
+          We help you <span className="text-orange-500 italic">grow</span> your companies.
+        </h1>
         {/* <img src="" alt="" /> */}
 
-        <div className="flex-col-reverse relative sm:flex-row flex gap-5 mt-8 sm:h-400px  lg:h-[350px]">
-          <Button title="Secure your spot"/>
-          <h2 className="text-2xl ml-auto sm:w-[50%] text-white mix-blend-difference">
+        <div className="flex-col-reverse sm:flex-row flex gap-5 mt-[90px]">
+          <Button title="Secure your spot" />
+          <h2 className="text-2xl ml-auto sm:w-[50%]">
             Take your business to the next level, launch your startup, and
             upskill yourself as an entrepreneur. Sign ups for 2024 Summer
             Program is now open!
           </h2>
-
-        </div>
-        <img
+      <section>
+        <div className="mt-[90px] mb-9 mx-auto lg:w-[50%] border border-gray-700 rounded-tl-[290px] rounded-bl-[50px] rounded-tr-[50px] rounded-br-[290px]">
+          <img
             src={ICONS.main_hero.src}
             alt="main"
-            className="absolute -z-50 top-[60px] first-letter:w-full rounded-tl-[200px] rounded-bl-[50px] rounded-tr-[50px] rounded-br-[200px] mx-auto"
-          />
-      </header>
+            className="h-full w-full rounded-tl-[290px] rounded-bl-[50px] rounded-tr-[50px] rounded-br-[290px] mx-auto object-contain lg:object-none"
+          >
+            {/* <source src="/assets/video.mp4" type="video/mp4" /> */}
+          </img>
+        </div>
+      </section>
 
-
-
-      <section className="mt-32 rounded-3xl flex-2 bg-[#19200e] p-5 w-[99%]">
-        <h2 className="mb-8 text-white">OUR PROGRAM</h2>
-        <h1 className="text-2xl text-white md:text-4xl mx-3 mb-8 max-w-[22ch]">
+      <section className="mt-32 rounded-3xl flex-2 p-5 w-[99%]">
+        <h2 className="mb-8">OUR PROGRAM</h2>
+        <h1 className="text-2xl md:text-4xl mx-3 mb-8 max-w-[22ch]">
           Launch your business in our transformative entrepreneurship journey.
         </h1>
         <div className="grid grid-rows-4 sm:grid-rows-2 lg:grid-rows-1 gap-8 grid-flow-col">
@@ -170,7 +176,10 @@ export default function Home() {
             </thead>
             <tbody className="">
               {alumni.map((al, idx) => (
-                <tr key={idx} className="border-collapse border-t border-gray-600 h-32">
+                <tr
+                  key={idx}
+                  className="border-collapse border-t border-gray-600 h-32"
+                >
                   <td className="text-3xl pl-2">{al.startup}</td>
                   <td>
                     {al.founders.map((f, i) => (
@@ -187,7 +196,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section  className=" bg-[#19200e] p-[20px] text-white mt-12 w-full overflow-clip">
+      <section className=" bg-[#19200e] p-[20px] ml-[-20px] w-[calc(100%+30px)] text-white mt-12 overflow-clip">
         <h2>PARTNERS & SPONSORS</h2>
         <h1 className="text-4xl mb-8 mt-8 max-w-[25ch]">
           Our Program is backed by the best.
@@ -210,12 +219,19 @@ export default function Home() {
           {/* class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:gap-12" */}
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 xl:gap-12">
             {experts.map((i, idx) => (
-              <ProfileCard key={idx} name={i.name} company={i.company} role={i.role} statement={i.statement} img={i.img} more={i.more} />
+              <ProfileCard
+                key={idx}
+                name={i.name}
+                company={i.company}
+                role={i.role}
+                statement={i.statement}
+                img={i.img}
+                more={i.more}
+              />
             ))}
           </div>
         </aside>
       </section>
-
       <section className="mt-24 py-32 p-6 lg:px-8 border bg-[#19200e] text-white rounded-3xl">
         <div className="w-full">
           <h1 className="text-2xl  font-bold md:text-5xl text-wrap">Ready to Begin Your Entreprenuership Journey?</h1>
@@ -226,14 +242,16 @@ export default function Home() {
           </div>
 
           <div className="mt-36">
-            <Button title={"Join The Waiting List"}/>
+            <Button title={"Join The Waiting List"} />
           </div>
         </div>
       </section>
 
       <section className="mt-24 px-2">
         <h2>FAQS</h2>
-        <h3 className="text-4xl my-8 max-w-[25ch]">Frequently Asked Questions</h3>
+        <h3 className="text-4xl my-8 max-w-[25ch]">
+          Frequently Asked Questions
+        </h3>
         <Faq />
 
         <div className="">
@@ -241,7 +259,6 @@ export default function Home() {
           <Button title="Reach out to us" />
         </div>
       </section>
-      
     </>
   );
 }
