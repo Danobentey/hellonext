@@ -19,7 +19,6 @@ const Partners = () => {
       } else if (scrollOffset <= -500) {
         setScrollOffset(1)
       }
-      console.log(scrollOffset)
     }, 25)
   })
 
