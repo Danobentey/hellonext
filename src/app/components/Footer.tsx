@@ -27,8 +27,8 @@ const Footer = () => {
         <Button title="Join the Waiting List" />
       </div>
 
-      <div className="flex gap-4 justify-between sm:justify-normal mt-[-70px] ml-[50%] pr-12 pt-6 pb-12">
-        <nav className="ml-[6%] flex flex-col">
+      <div className="flex gap-4  justify-between sm:justify-around mt-[-70px] ml-[40%] pr-12 pt-6 pb-12">
+        <nav className="ml-[6%] flex  h-full flex-col">
           {navigation.map((item) => (
             <a
               key={item.name}
@@ -44,11 +44,11 @@ const Footer = () => {
 
         <div className="flex flex-col gap-4 mt-[20px]">
           <p className="text-white text-[18px]">Contact us </p>
-          <p className="flex text-[15px] text-white place-items-center gap-1">
+          <p className="flex text-[15px] text-white place-items-center gap-1 hover:bg-gray-700 hover:text-white">
             <img src={ICONS.linkedin.src} alt="linkedin" className="h-[20px]" />
             LinkedIn
           </p>
-          <p className="flex text-[15px] text-white place-items-center gap-1">
+          <p className="flex text-[15px] text-white place-items-center gap-1 hover:bg-gray-700 hover:text-white">
             <img src={ICONS.fb.src} alt="fb" className="h-[20px]" />
             Facebook
           </p>

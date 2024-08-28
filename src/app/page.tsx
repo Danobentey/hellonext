@@ -127,9 +127,6 @@ export default function Home() {
             upskill yourself as an entrepreneur. Sign ups for 2024 Summer
             Program is now open!
           </h2>
-        </div>
-      </header>
-
       <section>
         <div className="mt-[90px] mb-9 mx-auto lg:w-[50%] border border-gray-700 rounded-tl-[290px] rounded-bl-[50px] rounded-tr-[50px] rounded-br-[290px]">
           <img
@@ -235,22 +232,13 @@ export default function Home() {
           </div>
         </aside>
       </section>
-
-      <section className="mt-24 py-32 p-6 lg:px-8 border bg-gray-300 rounded-3xl">
+      <section className="mt-24 py-32 p-6 lg:px-8 border bg-[#19200e] text-white rounded-3xl">
         <div className="w-full">
-          <h1 className="text-2xl font-bold md:text-5xl text-wrap">
-            Ready to Begin Your Entreprenuership Journey
-          </h1>
-          <div className="flex gap-5 mt-9 flex-wrap ">
-            <span className="bg-gray-800 rounded-lg text-gray-200 font-bold px-2 py-1 lg:px-4 lg:py-2">
-              👯 Make new friends
-            </span>
-            <span className="bg-gray-800 rounded-lg text-gray-200 font-bold px-2 py-1 lg:px-4 lg:py-2">
-              🚀 Launch a business
-            </span>
-            <span className="bg-gray-800 rounded-lg text-gray-200 font-bold px-2 py-1 lg:px-4 lg:py-2">
-              🔆 Become an entrepreneur
-            </span>
+          <h1 className="text-2xl  font-bold md:text-5xl text-wrap">Ready to Begin Your Entreprenuership Journey?</h1>
+          <div className="flex gap-5 mt-9 flex-wrap">
+            <span className="bg-gray-800 text-white rounded-lg font-bold px-2 py-1 lg:px-4 lg:py-2">👯 Make new friends</span>
+            <span className="bg-gray-800 text-white rounded-lg font-bold px-2 py-1 lg:px-4 lg:py-2">🚀 Launch a business</span>
+            <span className="bg-gray-800 text-white rounded-lg font-bold px-2 py-1 lg:px-4 lg:py-2">🔆 Become an entrepreneur</span>
           </div>
 
           <div className="mt-36">
