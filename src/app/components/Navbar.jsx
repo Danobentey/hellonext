@@ -12,13 +12,16 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import NavItems from "./NavItems";
+import { navigation } from "./NavItems";
+import {
+  SignedOut,
+  SignedIn,
+  UserProfile,
+  SignUpButton,
+  SignIn,
+  UserButton,
+} from "@clerk/nextjs";
 
-const navigation = [
-  { name: "Courses", href: "#", current: true },
-  { name: "About", href: "#", current: false },
-  { name: "Courses", href: "/products", current: false },
-  // { name: "Calendar", href: "#", current: false },
-];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -26,11 +29,11 @@ function classNames(...classes) {
 
 export default function Navbar() {
   const [] = useState();
-  const [position, setPosition] = useState(window.scrollY);
+  const [position, setPosition] = useState(scrollY);
   const [visible, setVisible] = useState(true);
   useEffect(() => {
     const handleScroll = () => {
-      let moving = window.scrollY;
+      let moving = scrollY;
 
       setVisible(position > moving);
       setPosition(moving);
@@ -46,7 +49,7 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className={`shadow fixed w-full ease-in-out duration-500 bg-[#f5f9f5] ml-[-20px] top-0 ${
+      className={`shadow fixed z-10 w-full ease-in-out duration-500 bg-[#f5f9f5] ml-[-20px] top-0 ${
         visible ? "top-0" : "top-[-80px]"
       }`}
     >
@@ -90,7 +93,15 @@ export default function Navbar() {
             </button>
 
             {/* Profile dropdown */}
-            <Menu as="div" className="relative ml-3">
+            <div className="ml-3 mt-2">
+              <SignedOut>
+                <SignUpButton />
+              </SignedOut>
+              <SignedIn>
+                <UserButton />
+              </SignedIn>
+            </div>
+            {/* <Menu as="div" className="relative ml-3">
               <div>
                 <MenuButton className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                   <span className="absolute -inset-1.5" />
@@ -131,7 +142,7 @@ export default function Navbar() {
                   </a>
                 </MenuItem>
               </MenuItems>
-            </Menu>
+            </Menu> */}
           </div>
         </div>
       </div>

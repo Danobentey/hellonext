@@ -136,7 +136,9 @@ export default function Home() {
             src={ICONS.main_hero.src}
             alt="main"
             className="h-full w-full rounded-tl-[290px] rounded-bl-[50px] rounded-tr-[50px] rounded-br-[290px] mx-auto object-contain lg:object-none"
-          />
+          >
+            {/* <source src="/assets/video.mp4" type="video/mp4" /> */}
+          </img>
         </div>
       </section>
 
@@ -197,7 +199,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" bg-[#19200e] p-[20px] text-white mt-12 w-full overflow-clip">
+      <section className=" bg-[#19200e] p-[20px] ml-[-20px] w-[calc(100%+30px)] text-white mt-12 overflow-clip">
         <h2>PARTNERS & SPONSORS</h2>
         <h1 className="text-4xl mb-8 mt-8 max-w-[25ch]">
           Our Program is backed by the best.
@@ -234,7 +236,7 @@ export default function Home() {
         </aside>
       </section>
 
-      <section className="mt-24 py-32 p-6 lg:px-8 border border-gray-700 rounded-3xl">
+      <section className="mt-24 py-32 p-6 lg:px-8 border bg-gray-300 rounded-3xl">
         <div className="w-full">
           <h1 className="text-2xl font-bold md:text-5xl text-wrap">
             Ready to Begin Your Entreprenuership Journey
