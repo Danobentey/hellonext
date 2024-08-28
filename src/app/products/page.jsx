@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import wooCommerce from '../../lib/woocommerce';
+import { SignedIn, UserButton } from '@clerk/nextjs';
 
 export default async function ProductsPage() {
   let products = [];

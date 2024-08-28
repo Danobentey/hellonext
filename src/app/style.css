@@ -97,4 +97,9 @@ span i {
   100% {
     transform: translate(0, 0);
   }
+
 }
+/* moved footer styling inline */
+/* TODO: Delete this and place further syling inline */
+footer{
+  background:linear-gradient(to bottom right, #cece25,black 85%);

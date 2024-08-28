@@ -2,50 +2,29 @@
 import React, { useState } from "react";
 import Button from "./Button";
 import ICONS from "../images/icons";
+import { navigation } from "./NavItems";
+import { usePathname } from "next/navigation";
+
+const footerStyle = {
+  background: "linear-gradient(to bottom right, #cece25,black 85%)",
+};
 
 const Footer = () => {
   const [active, setActive] = useState("Dashboard");
+  const currentPath = usePathname();
 
   function classNames(...classes: any[]) {
     return classes.filter(Boolean).join(" ");
   }
 
-  const navigation = [
-    {
-      name: "Program",
-      href: "#",
-      current: function () {
-        return active === this.name;
-      },
-    },
-    {
-      name: "About",
-      href: "#",
-      current: function () {
-        return active === this.name;
-      },
-    },
-    {
-      name: "Contacts",
-      href: "#",
-      current: function () {
-        return active === this.name;
-      },
-    },
-    // {
-    //   name: "Testimonials",
-    //   href: "#",
-    //   current: function () {
-    //     return active === this.name;
-    //   },
-    // },
-  ];
-
   return (
-    <div className="mt-[-59px] w-[101%] ml-[-10px] p-[20px] rounded-tr-[15px] rounded-tl-[15px] h-[300px]flex flex-col gap-4 sm:flex-row sm:justify-between bg-[radial-gradient(circle_at_bottom,_var(--tw-gradient-stops))] from-[#d5cd1e] from-5% to-black to-90%">
+    <div
+      style={footerStyle}
+      className="mt-[-59px] w-[calc(100%+30px)] ml-[-20px] p-[20px] rounded-tr-[15px] rounded-tl-[15px] h-[300px]flex flex-col gap-4 sm:flex-row sm:justify-between"
+    >
       <div className="ml-12 mt-12">
         <img src="" alt="" />
-        <Button  title="Join the Waiting List" />
+        <Button title="Join the Waiting List" />
       </div>
 
       <div className="flex gap-4  justify-between sm:justify-around mt-[-70px] ml-[40%] pr-12 pt-6 pb-12">
@@ -54,13 +33,9 @@ const Footer = () => {
             <a
               key={item.name}
               href={item.href}
-              aria-current={item.current() ? "page" : undefined}
-              className={classNames(
-                item.current()
-                  ? " underline text-[50px] m-[20px] text-white"
-                  : "text-[50px] p-[20px] text-gray-300 hover:text-[60px]",
-                "rounded-md text-sm font-medium"
-              )}
+
+              aria-current={item.href === currentPath ? "page" : undefined}
+              className="text-[20px] p-[20px] text-gray-300 hover:underline hover:text-white font-medium"
               onClick={() => setActive(item.name)}
             >
               {item.name}
@@ -78,12 +53,11 @@ const Footer = () => {
             <img src={ICONS.fb.src} alt="fb" className="h-[20px]" />
             Facebook
           </p>
-          <p className="flex text-[15px] text-white place-items-center gap-1 hover:bg-gray-700 hover:text-white">
-            <img src={ICONS.insta.src} alt="insta" className="h-[30px]" />
+          <p className="flex text-[15px] text-white place-items-center gap-1">
+            <img src={ICONS.insta.src} alt="insta" className="h-[20px]" />
             Instagram
           </p>
         </div>
-
       </div>
     </div>
   );
