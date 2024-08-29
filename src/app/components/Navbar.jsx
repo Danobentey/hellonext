@@ -29,22 +29,20 @@ function classNames(...classes) {
 
 export default function Navbar() {
   const [] = useState();
-  const [position, setPosition] = useState(scrollY);
+  const [position, setPosition] = useState(0);
   const [visible, setVisible] = useState(true);
   useEffect(() => {
     const handleScroll = () => {
-      let moving = scrollY;
+      const currentScrollY = window.scrollY;
 
-      setVisible(position > moving);
-      setPosition(moving);
+      setVisible(position > currentScrollY || currentScrollY < 10);
+      setPosition(currentScrollY);
     };
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   });
-
-  const cls = visible ? "visible" : "hidden";
 
   return (
     <Disclosure
