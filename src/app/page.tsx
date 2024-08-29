@@ -127,6 +127,8 @@ export default function Home() {
             upskill yourself as an entrepreneur. Sign ups for 2024 Summer
             Program is now open!
           </h2>
+        </div>
+      </header>
       <section>
         <div className="mt-[90px] mb-9 mx-auto lg:w-[50%] border border-gray-700 rounded-tl-[290px] rounded-bl-[50px] rounded-tr-[50px] rounded-br-[290px]">
           <img
